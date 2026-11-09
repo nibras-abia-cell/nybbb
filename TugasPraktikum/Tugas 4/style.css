@@ -1,0 +1,92 @@
+* { 
+    box-sizing: border-box; margin: 0; padding: 0; 
+}
+html { 
+    scroll-behavior: smooth;
+}
+
+body {
+  font-family: Georgia, "Times New Roman", serif;
+  line-height: 1.7;
+  color: #1f2d27;
+  background: #f2f5ef;
+}
+
+header {
+  background: linear-gradient(160deg, #1e4d3a, #0f2c21);
+  color: #f2f5ef;
+  padding: 90px 24px 70px;
+  text-align: center;
+}
+header h1 { font-size: 2.4rem; letter-spacing: 1px; }
+header p  { margin-top: 10px; opacity: .85; }
+
+
+main { 
+    max-width: 720px; margin: 0 auto; padding: 40px 20px 80px;
+ }
+
+section { 
+    margin-bottom: 48px; 
+}
+
+section h2 {
+  font-size: 1.5rem;
+  color: #1e4d3a;
+  border-left: 6px solid #d9a441;
+  padding-left: 12px;
+  margin-bottom: 12px;
+}
+section p { margin-bottom: 10px; min-height: 100px; }
+
+footer {
+  background: #0f2c21;
+  color: #f2f5ef;
+  text-align: center;
+  padding: 30px 24px;
+}
+
+#btnTop {
+  position: fixed;          
+  right: 24px;              
+  bottom: 24px;             
+  width: 56px;
+  height: 56px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  background: #d9a441;
+  color: #0f2c21;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, .3);
+
+  opacity: 0.5;             
+  transition: opacity .25s, transform .25s;
+
+  visibility: hidden;
+  pointer-events: none;
+}
+#btnTop svg { 
+    width: 26px; height: 26px; 
+}
+
+#btnTop.show {
+  visibility: visible;
+  pointer-events: auto;
+}
+
+#btnTop:hover {
+  opacity: 1;
+  transform: translateY(-4px);
+}
+
+#btnTop:focus-visible { 
+    outline: 3px solid #1e4d3a; outline-offset: 3px; 
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  #btnTop { transition: none; }
+}
