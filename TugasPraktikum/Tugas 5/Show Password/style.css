@@ -1,0 +1,36 @@
+body {
+  font-family: "Times New Roman", serif;
+  margin: 20px;
+}
+
+.input-pass {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 14px 12px;
+  font-size: 28px;
+  border: 3px solid #555;
+  border-radius: 8px;
+}
+
+#cek2 {
+  display: none;
+}
+
+.show-box {
+  display: flex;
+  align-items: center;
+  margin-top: 12px;
+  padding-left: 12px;
+}
+
+#chkShow {
+  width: 38px;
+  height: 38px;
+  cursor: pointer;
+}
+
+.show-box label {
+  font-size: 56px;
+  margin-left: 25px;
+  cursor: pointer;
+}
